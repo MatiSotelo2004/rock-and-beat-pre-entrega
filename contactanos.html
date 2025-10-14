@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Rock & Beat Store - Tienda de música y accesorios</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock & Beat Store</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./index.html#productos">Productos</a></li>
+          <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="#">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="contactanos">CONTACTANOS</h2>
+      <form action="https://formspree.io/f/myznbbrg" method="POST">
+        <label
+          >Nombre:
+          <input
+            type="text"
+            name="nombre"
+            required
+            placeholder="Ej: Marcela Cardoso"
+            class="input-form"
+            id="nombre-form"
+          />
+        </label>
+        <br />
+        <label
+          >Email:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="example@mail.com" class="input-form" id="email-form"/></label
+        ><br />
+        <label
+          >Mensaje:
+          <textarea
+            name="mensaje"
+            required
+            placeholder="Escribe algo..."
+            class="input-form"
+            id="mensaje-form"
+          ></textarea>
+        </label><br>
+        <button type="submit" id="button-form">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p>Sitio Web hecho por Matias Sotelo</p>
+      <div class="icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./img/icons/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./img/icons/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://github.com/MatiSotelo2004" target="_blank"
+          ><img src="./img/icons/github.svg" alt="GitHub - Maty2004"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
