@@ -46,6 +46,26 @@ header nav ul li a:hover {
   transition-duration: 300ms;
 }
 
+#carrito_img {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(100%);
+}
+#carrito_contador {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#carrito:hover #carrito_img {
+  filter: invert(20%);
+  transition-duration: 300ms;
+}
+#carrito:hover #carrito_contador {
+  color: #333333;
+  transition-duration: 300ms;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -176,6 +196,7 @@ header nav ul li a:hover {
 }
 .Comprar-button {
   background-color: #a80024;
+  border: none;
   color: #ededed;
   border-radius: 0.4rem;
   text-decoration: none;
@@ -336,7 +357,6 @@ footer {
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
-  /* margin-top: 40px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,4 +394,82 @@ footer p {
   footer p {
     margin: 0;
   }
+}
+
+/* MODAL CARRITO */
+.modal_carrito{
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.305);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+}
+.contenido-modal{
+  background-color: #f8f8f8;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+.contenido-modal p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+.carrito-header{
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-header a{
+  margin-top: 8px;
+}
+.botones-carrito{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding-top: 20px;
+}
+#vaciar-carrito{
+  background-color: #a80024;
+  border: none;
+  color: #ededed;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px;
+}
+#vaciar-carrito:hover{
+  background-color: #df5170;
+  transition-duration: 300ms;
+  color: #444444;
+}
+#confirmar-carrito{
+  background-color: #84a800;
+  color: #ededed;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px;
+}
+#confirmar-carrito:hover{
+  background-color: rgb(134, 166, 141);
+  transition-duration: 300ms;
+  color: #444444;
+}
+#cerrar-carrito img{
+  width: 20px;
+  height: 20px;
+}
+#carrito-vacio{
+  font-weight: 300;
+  color: #444444;
+  text-align: center;
+  margin: 1rem;
 }
