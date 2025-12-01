@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>Rock & Beat Store - Tienda de música y accesorios</title>
   </head>
 
@@ -23,6 +23,16 @@
           <li><a href="./index.html#productos">Productos</a></li>
           <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
           <li><a href="#">Contactanos</a></li>
+          <li>
+            <a href="#" id="carrito"
+              ><img
+                id="carrito_img"
+                src="./img/carrito-de-compras.png"
+                alt="Ver carrito de compra"
+              />
+              <span id="carrito_contador"></span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,7 +57,9 @@
             type="email"
             name="email"
             required
-            placeholder="example@mail.com" class="input-form" id="email-form"/></label
+            placeholder="example@mail.com"
+            class="input-form"
+            id="email-form" /></label
         ><br />
         <label
           >Mensaje:
@@ -57,8 +69,8 @@
             placeholder="Escribe algo..."
             class="input-form"
             id="mensaje-form"
-          ></textarea>
-        </label><br>
+          ></textarea></label
+        ><br />
         <button type="submit" id="button-form">Enviar</button>
       </form>
     </main>
@@ -76,5 +88,25 @@
         /></a>
       </div>
     </footer>
+
+    <!-- MODAL CARRITO -->
+    <div class="modal_carrito">
+      <div class="contenido-modal">
+        <div class="carrito-header">
+          <p>TU CARRITO</p>
+          <a href="" id="cerrar-carrito"
+            ><img src="./img/cerrar.png" alt="Cerrar Carrito"
+          /></a>
+        </div>
+        <div class="productos-carrito"></div>
+        <p id="total-msg"></p>
+        <div class="botones-carrito">
+          <button id="vaciar-carrito">Vaciar Carrito</button>
+          <a href="#" id="confirmar-carrito">Confirmar</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
